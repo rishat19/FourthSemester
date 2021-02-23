@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="ru.kpfu.itis.ganiev.calculator"/>
 
     <bean id="addition" class="ru.kpfu.itis.ganiev.calculator.Operator">
         <constructor-arg value="+"/>
@@ -16,9 +19,9 @@
     </bean>
 
     <bean id="multipleOperations" class="ru.kpfu.itis.ganiev.calculator.ComplexOperator">
-        <constructor-arg name="firstOperator" ref="addition" />
-        <constructor-arg name="secondOperator" ref="multiplication" />
-        <constructor-arg name="thirdOperator" ref="subtraction" />
+        <constructor-arg name="firstOperator" ref="addition"/>
+        <constructor-arg name="secondOperator" ref="multiplication"/>
+        <constructor-arg name="thirdOperator" ref="subtraction"/>
     </bean>
 
 </beans>
