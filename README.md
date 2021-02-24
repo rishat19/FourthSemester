@@ -2,9 +2,11 @@
 
 ### ДЗ №1
 
-[Консольный какульлятор](https://github.com/rishat19/FourthSemester/tree/main/ConsoleCalculator)
+[Консольный какульлятор на основе компонент](https://github.com/rishat19/FourthSemester/tree/main/ConsoleCalculator)
 
 ### ДЗ №2
+
+[Spring-контроллер](https://github.com/rishat19/FourthSemester/tree/main/Controllers)
 
 ### ДЗ №3
 
